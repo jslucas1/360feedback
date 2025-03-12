@@ -1,8 +1,10 @@
 document.addEventListener("DOMContentLoaded", async function () {
     const app = document.getElementById("app");
+    const aprUrl = 'http://localhost:5140/api/'
 
     // Simulated API call with fake team members
     async function fetchTeamMembers() {
+        
         return new Promise((resolve) => {
             setTimeout(() => {
                 resolve([
