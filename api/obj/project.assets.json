@@ -615,19 +615,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jsluc\\.nuget\\packages\\": {}
+    "C:\\Users\\jslucas\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jsluc\\OneDrive\\Documents\\source\\repos\\360feedback\\api\\api.csproj",
+      "projectUniqueName": "C:\\Users\\jslucas\\Documents\\source\\repos\\360feedback\\api\\api.csproj",
       "projectName": "api",
-      "projectPath": "C:\\Users\\jsluc\\OneDrive\\Documents\\source\\repos\\360feedback\\api\\api.csproj",
-      "packagesPath": "C:\\Users\\jsluc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jsluc\\OneDrive\\Documents\\source\\repos\\360feedback\\api\\obj\\",
+      "projectPath": "C:\\Users\\jslucas\\Documents\\source\\repos\\360feedback\\api\\api.csproj",
+      "packagesPath": "C:\\Users\\jslucas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jslucas\\Documents\\source\\repos\\360feedback\\api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jsluc\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\jslucas\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -684,7 +684,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

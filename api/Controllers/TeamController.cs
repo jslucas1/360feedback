@@ -1,3 +1,6 @@
+using api;
+using api.DataHandlers;
+using api.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,18 +12,29 @@ namespace MyApp.Namespace
     {
         // GET: api/<TeamController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<List<Dictionary<string, object>>> Get()
         {
-            Database db = new Database();
+            ITeamDataHandler dataHandler = new MySqlTeamDataHandler();
             
-            return new string[] { "value1", "value2" };
+            return await dataHandler.GetAllTeams();
         }
 
         // GET api/<TeamController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public async Task<List<Dictionary<string, object>>> Get(int id)
         {
-            return "value";
+            ITeamDataHandler dataHandler = new MySqlTeamDataHandler();
+            
+            return await dataHandler.GetTeamById(id);
+        }
+
+        // GET api/<TeamController>/user/5
+        [HttpGet("user/{id}", Name="GetTeamByUser")]
+        public async Task<List<Dictionary<string, object>>> GetByUser(int id)
+        {
+            ITeamDataHandler dataHandler = new MySqlTeamDataHandler();
+            
+            return await dataHandler.GetTeamByUser(id);
         }
 
         // POST api/<TeamController>
